@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: jost;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ux-logo {
+    position: absolute;
+    display: flex;
+    margin-left: 5%;
+    padding-top: 40px;
+    font-family: jost;
+    color: white;
+    font-size: 50px;
+}
+
+.ux-navbar {
+    height: 150px;
+    background-color: #2519cd;
+    display: list-item;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px #4d4d4d;
+}
+
+.ux-navid ul {
+    margin-left: 70%;
+    list-style: none;
+    display: flex;
+    padding-top: 40px;
+}
+
+.ux-navid ul a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Next Part*/
+
+.body1 {
+    height: 440px;
+}
+
+.one {
+    margin-top: 50px;
+    height: 150px;
+}
+
+.year {
+    width: 30%;
+    height: 100px;
+    margin: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #3498db;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.year a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+
+.year:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgb(81, 81, 194);
+}
+
+/*Next Part*/
+
+footer {
+    width: 100%;
+    height: -70px;
+    background-color: #2519cd;
+    display: flex;
+    box-shadow: 0 0 100px #3498db;
+}
+
+footer ul {
+    display: flex;
+    padding-left: 100px;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 25px;
+    font-family: jost;
+    font-weight: 500;
+}
+
+.tech pre {
+    font-family: jost;
+    font-weight: 400;
+    padding-left: 500px;
+    padding-top: 75px;
+    color: white;
+    font-size: 15px;
+}

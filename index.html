@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ux-navbar">
+        <nav class="ux-navid">
+            <label for="logo" class="ux-logo">Crakade</label>
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Centers</li>
+                </a>
+                <a href="#">
+                    <li>Skills</li>
+                </a>
+                <a href="#">
+                    <li>Ask Doubt</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+            </ul>
+            <div class="ux-login_signup">
+                <span id="loginStatus"></span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Next Part -->
+
+    <div>
+        <img class="ux-headimg" src="assets/img/home-illustration_page-0001.jpg" width="650px" height="300px" alt="">
+        <pre class="ux-headline">Crack your trade with<br>India's top faculties</pre>
+        <pre class="ux-tagline">Over<span>10 crore</span>learners trust us for their preparation</pre>
+        <input type="text" class="ux-phone" placeholder="Enter your mobile number">
+        <pre class="ux-verify">We'll send an OTP for verification</pre>
+        <button class="ux-join">Join for free</button>
+    </div>
+
+    <!-- Next Part -->
+
+    <section class="ux-body2">
+        <center>
+            <pre class="ux-headline2">Select your trade</pre>
+            <pre class="ux-tagline2"><span>300+</span>mocks available for your preparation</pre>
+            <input type="text" class="ux-search_goal" placeholder="Type the trade you want to unleash">
+            <pre class="ux-goal">Popular Goals</pre>
+        </center>
+
+        <center>
+            <div>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">computer</span><br>Computer<br>Engineering</button>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">tungsten</span><br>Electronics&Communication<br>Engineering</button>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">tips_and_updates</span><br>Electrical<br>Engineering</button>
+            </div>
+
+            <div>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">precision_manufacturing</span><br>Mechanical<br>Engineering</button>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">apartment</span><br>Civil<br>Engineering</button>
+                <button class="ux-course" onclick="isLoggedInCheck()"><span
+                        class="material-icons-outlined">devices</span><br>Information<br>Technology</button>
+            </div>
+        </center>
+        <center>
+            <p class="ux-popular"><a href="popular.html">Popular(10+ Trades)</a></p>
+        </center>
+    </section>
+
+    <!-- Next Part -->
+
+    <section class="ux-body3" style="margin-top: 250px;">
+        <div class="ux-parent-container">
+            <div class="ux-train">
+                <img src="assets/img/train.jpg" width="400px" height="250px" alt="">
+                <pre style="margin-left: 100px;">Ace your trade with our<br>best training centres</pre>
+                <div class="ux-city">
+                    <pre>Admissions open in Kolkata,Delhi,Chennai<br>Mumbai and 20+ cities</pre>
+                </div>
+                <div class="ux-points">
+                    <pre>Connect with the top educators<br>Live classes and weekly tests<br>Offline and online both available</pre>
+                </div>
+                <button class="ux-centre">Nearby Centre</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Part -->
+
+    <footer>
+        <ul>
+            <a href="#">
+                <li>About Us</li>
+            </a>
+            <a href="#">
+                <li>Careers</li>
+            </a>
+            <a href="#">
+                <li></li>Blogs</li>
+            </a>
+            <a href="#">
+                <li></li>Privacy Policy</li>
+            </a>
+            <a href="#">
+                <li></li>Terms and Conditions</li>
+            </a>
+        </ul>
+        <div class="tech">
+            <pre>© 2023 Xenon Technologies Pvt Ltd</pre>
+        </div>
+    </footer>
+
+    <script>
+
+        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+        function updateLoginStatus() {
+            const loginSignupDiv = document.querySelector('.ux-login_signup');
+            const loginStatusSpan = document.querySelector('#loginStatus');
+
+            if (isLoggedIn) {
+                loginStatusSpan.innerHTML = `
+                    <button class="ux-signup" onclick="logout()">Logout</button>
+                `;
+            } else {
+                loginStatusSpan.innerHTML = `
+                    <a href="login.html"><button class="ux-login">Log In</button></a>
+                    <a href="signup.html"><button class="ux-signup">Sign Up</button></a>
+                `; 
+            }
+        }
+
+        function logout() { 
+            localStorage.removeItem('isLoggedIn');
+            updateLoginStatus();
+            window.location.href = 'index.html'
+        }
+
+        function isLoggedInCheck() {
+            if (isLoggedIn) {
+                open('curriculm_topic.html');
+            } else {
+                alert('Login failed. Authentication unsuccessful.');
+            }
+        }
+
+        updateLoginStatus();
+
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

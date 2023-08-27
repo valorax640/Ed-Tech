@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: jost;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ux-logo {
+    position: absolute;
+    display: flex;
+    margin-left: 5%;
+    padding-top: 40px;
+    font-family: jost;
+    color: white;
+    font-size: 50px;
+}
+
+.ux-navbar {
+    height: 150px;
+    background-color: #2519cd;
+    display: list-item;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px #4d4d4d;
+}
+
+.ux-navid ul {
+    margin-left: 70%;
+    list-style: none;
+    display: flex;
+    padding-top: 40px;
+}
+
+.ux-navid ul a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Next Part*/
+
+.topic {
+    height: 200px;
+}
+
+.topic p {
+    font-size: 80px;
+    margin-left: 500px;
+    margin-top: 50px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+
+/*Next Part*/
+
+.body2 {
+    margin-top: 50px;
+    height: 3000px;
+}
+
+pre {
+    font-size: 1px;
+}
+
+.card {
+    margin: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #3498db;
+
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgb(81, 81, 194);
+}
+
+.cardholder {
+    display: flex;
+    margin-left: 60px;
+
+}
+
+.module p {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 80px;
+    font-weight: 600;
+    color: orangered;
+    text-decoration: underline 3px;
+}
+
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: -70px;
+    background-color: #2519cd;
+    display: flex;
+    box-shadow: 0 0 50px #3498db;
+}
+
+footer ul {
+    position: absolute;
+    display: flex;
+    padding-left: 100px;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 25px;
+    font-family: jost;
+    font-weight: 500;
+}
+
+.tech pre {
+    font-family: jost;
+    font-weight: 400;
+    padding-left: 1100px;
+    padding-top: 75px;
+    color: white;
+    font-size: 15px;
+}

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: jost;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ux-logo{
+    position: absolute;
+    display: flex;
+    margin-left:5% ;
+    padding-top: 40px;
+    font-family: jost;
+    color: white;
+    font-size: 50px;
+}
+
+.ux-navbar{
+    height: 150px;
+    background-color: #2519cd;
+    display: list-item;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px #4d4d4d;
+}
+
+.ux-navid ul{
+    margin-left: 70%;
+    list-style: none;
+    display: flex;
+    padding-top: 40px;
+}
+
+.ux-navid ul a{
+    padding: 20px ;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*Next Part*/
+
+.ux-welcome p{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-left: 90px;
+    color: #4d4d4d;
+}
+.ux-boost p{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 190px;
+    margin-left: 105px;
+    color: #807f7f;
+}
+
+/*Next Part*/
+
+
+.body2{
+    height: 700px;
+}
+
+.ux-area{
+    position: absolute;
+    width: 24%;
+    height: 375px;
+    background-color: #2519cd;
+    margin-left: 950px;
+    margin-top: 200px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px #4d4d4d;
+}
+
+.ux-inarea{
+    position: absolute;
+    width: 70%;
+    height: 270px;
+    background-color: #2519cd;
+    margin:55px 55px;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+.ux-inarea:hover{
+    background-color: #776feb;
+    box-shadow: 0 0 15px white;
+}
+
+.ux-course p{
+    margin-top: 100px;
+}
+
+.ux-course p a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.uxt p{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 250px;
+    text-decoration: none;
+    color: black;
+    font-family: jost;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555252;
+}
+
+.progress{
+    width: 20%;
+    position: absolute;
+}
+
+/*Next Part*/
+
+.body3{
+    height: 600px;
+}
+
+.ux-domain p{
+    position: absolute;
+    margin-left: 90px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+
+.ux-join{
+    position: absolute;
+    margin: 100px 100px;
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fffcfc;
+    box-shadow: 0 0 4px black;
+    font-weight: 500;
+    font-size: 15px;
+    color: #555252;
+    transition:background-color 0.3s ease;
+}
+
+.ux-join:hover{
+    background-color: #edebeb;
+}
+
+.ux-learn p{
+    position: absolute;
+    margin: 300px 500px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.ux-explore{
+    margin-top:370px;
+    margin-left: 650px;
+    width: 10%;
+    height: 40px;
+    border: none;
+    border-radius: 100px;
+    background-color: #fffcfc;
+    box-shadow: 0 0 4px black;
+    font-weight: 500;
+    font-size: 15px;
+    color: #555252;
+    transition:background-color 0.3s ease;
+}
+
+.ux-explore:hover{
+    background-color: #edebeb;
+}
+
+/*Next Part*/
+
+footer{
+    width: 100%;
+    height: -70px;
+    background-color: #2519cd;
+    display: flex;
+    box-shadow: 0 0 100px #3498db;
+}
+footer ul{
+    display: flex;
+    padding-left: 100px;
+}
+footer ul a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 25px;
+    font-family: jost;
+    font-weight: 500;
+}
+
+.tech pre{
+    font-family: jost;
+    font-weight: 400;
+    padding-left:500px;
+    padding-top: 75px;
+    color: white;
+    font-size: 15px;
+}

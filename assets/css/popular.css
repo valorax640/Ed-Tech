@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: jost;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo{
+    position: absolute;
+    display: flex;
+    margin-left:5% ;
+    padding-top: 40px;
+    font-family: jost;
+    color: white;
+    font-size: 50px;
+}
+
+.navbar{
+    height: 150px;
+    background-color: #2519cd;
+    display: list-item;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px #4d4d4d;
+}
+
+.navid ul{
+    margin-left: 70%;
+    list-style: none;
+    display: flex;
+    padding-top: 40px;
+}
+
+.navid ul a{
+    padding: 20px ;
+    color: white;
+    text-decoration: none;
+}
+.body1{
+    height: 1800px;
+}
+
+.body1 pre{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: jost;
+    margin-top: 7%;
+    color: #4d4d4d;
+    height: 100px;
+}
+
+.course {
+    margin: 30px;
+    font-family: jost;
+    font-weight: 600;
+    font-size: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 80px;
+    background-color: white;
+    color: #4d4d4d;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px #3498db;
+}
+
+.course span {
+    font-size: 40px;
+}
+
+.course:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgb(81, 81, 194);
+}
+
+/*Next part*/
+
+.body2{
+    height: 400px;
+}
+
+.body2 pre{
+    margin-left: 10%;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+.add pre{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.trade_search{
+    width: 40%;
+    height: 40px;
+    margin-left: 10%;
+    border-radius: 5px;
+    border: 0.5px solid rgb(152, 148, 148);
+    margin-top: 2%;
+}
+
+.search_submit{
+    margin-top: 1.5%;
+    width: 7%;
+    height: 40px;
+    margin-left: 10%;
+    border-radius: 5px;
+    border: 0.5px solid rgb(152, 148, 148);
+    font-size: 15px;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.search_submit:hover{
+    background-color: #adacb0;
+}
+
+/*Next Part*/
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: -70px;
+    background-color: #2519cd;
+    display: flex;
+    box-shadow: 0 0 50px #3498db;
+}
+footer ul{
+    position: absolute;
+    display: flex;
+    padding-left: 100px;
+}
+footer ul a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 40px;
+    padding-left: 25px;
+    font-family: jost;
+    font-weight: 500;
+}
+
+.tech pre{
+    font-family: jost;
+    font-weight: 400;
+    padding-left:1100px;
+    padding-top: 75px;
+    color: white;
+    font-size: 15px;
+}
